@@ -140,11 +140,25 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Table ]*/
 
+/*
 .limiter {
   width: 100%;
   margin: 0 auto;
   background: #fa71cd;
   background: -webkit-linear-gradient(bottom, #c471f5, #fa71cd);
+  background: -o-linear-gradient(bottom, #c471f5, #fa71cd);
+  background: -moz-linear-gradient(bottom, #c471f5, #fa71cd);
+  background: linear-gradient(bottom, #c471f5, #fa71cd);
+
+
+}
+*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+  background: #fa71cd;
+  background: -webkit-linear-gradient(bottom, #706060, #706060);
   background: -o-linear-gradient(bottom, #c471f5, #fa71cd);
   background: -moz-linear-gradient(bottom, #c471f5, #fa71cd);
   background: linear-gradient(bottom, #c471f5, #fa71cd);
