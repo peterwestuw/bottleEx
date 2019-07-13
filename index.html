@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BottleEx Examples</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<div class="table100 ver1">
+					<div class="table100-firstcol">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="row100 body">
+									<td class="cell100 column1">For each sentence, summarization is done by BottleEx as well as a related method, also based on GPT-2, with a reconstructive rather than predictive objective.</td>
+								</tr>
+
+
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="wrap-table100-nextcols js-pscroll">
+						<div class="table100-nextcols">
+							<table>
+								<thead>
+									<tr class="row100 head">
+										<th class="cell100 column2">Original</th>
+										<th class="cell100 column3">BottleEx</th>
+										<th class="cell100 column4">AutoEncodingEx</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="row100 body">
+										<td class="cell100 column2">"This brutal assault on innocent civilians is another reminder that terrorism is a threat to peace-loving people everywhere and must be met with unwavering resolve," she said.</td>
+										<td class="cell100 column3">"This is another reminder that terrorism must be met with resolve," she said.</td>
+										<td class="cell100 column4">a threat to peace-loving people everywhere and must be met with unwavering resolve</td>
+									</tr>
+
+									<tr class="row100 body">
+										<td class="cell100 column2">"Even though they are identified as male characters and possess many human traits and characteristics (as most Sesame Street Muppetsâ„¢ do), they remain puppets, and do not have a sexual orientation," the statement said.</td>
+										<td class="cell100 column3">(LifeWire) Nancy, who teaches English as a second language in New York, sat to check her e-mail.</td>
+										<td class="cell100 column4">(lifewire) -- nancy dunetz, who teaches english as a second language in new york city, sat down in</td>
+									</tr>
+
+									<tr class="row100 body">
+										<td class="cell100 column2">(CNN) -- Manchester United has announced a record operating profit of £110.9 million ($176 million) for last season, cementing its position as the world's richest football club.</td>
+										<td class="cell100 column3">Manchester United has announced a record operating profit (), cementing its position as the world's richest club.</td>
+										<td class="cell100 column4">Manchester United profit of £110.9 million) last season, cementing its position as the world's richest football club.</td>
+									</tr>
+
+									<tr class="row100 body">
+										<td class="cell100 column2">At Cedars-Sinai, 17 patients, including Milles, were given stem cells approximately six weeks after suffering a moderate to major heart attack.</td>
+										<td class="cell100 column3">At Cedars-Sinai, 17 patients,, were given stem cells six weeks after suffering a major heart attack.</td>
+										<td class="cell100 column4">At Cedars-Sinai, 17 patients, including Milles, were given stem cells approximately six weeks after suffering</td>
+									</tr>
+
+									<tr class="row100 body">
+										<td class="cell100 column2">The unique mechanism design on the robot equips it with super-human range of motion to maneuver in complex spaces.</td>
+										<td class="cell100 column3">The unique mechanism on the robot equips it to maneuver in complex spaces.</td>
+										<td class="cell100 column4">Unique mechanism design on the robot equips super-human to maneuver in complex spaces.</td>
+									</tr>
+																		
+
+									<tr class="row100 body">
+										<td class="cell100 column2">"They're operating at the limits of their endurance," said Mike Barton, the authority's rescue coordination chief.</td>
+										<td class="cell100 column3">"They're at the limits of their endurance," said Barton, the rescue chief.</td>
+										<td class="cell100 column4">"They're operating at the limits of their endurance," rescue coordination chief</td>
+									</tr>									
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+
+			$(this).on('ps-x-reach-start', function(){
+				$(this).parent().find('.table100-firstcol').removeClass('shadow-table100-firstcol');
+			});
+
+			$(this).on('ps-scroll-x', function(){
+				$(this).parent().find('.table100-firstcol').addClass('shadow-table100-firstcol');
+			});
+
+		});
+
+		
+		
+		
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
