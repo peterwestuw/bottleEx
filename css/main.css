@@ -296,7 +296,7 @@ th, td {
   font-size: 14px;
   color: #333333;
   line-height: 1.4;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .table100.ver1 td {
